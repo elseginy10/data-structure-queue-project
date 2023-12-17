@@ -35,7 +35,7 @@ if is_empty_btn:
         st.balloons()
     else:
         st.success("The queue is not empty")
-        st.snow()
+        
     
 with open("data/queue.json", "w") as file:
     json.dump(queue, file)
