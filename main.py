@@ -5,6 +5,11 @@ import json
 with open("data/queue.json", "r") as file:
     queue = json.load(file)
 
+st.set_page_config(
+    page_title="queue web App",
+    page_icon=":shark:",
+)
+
 st.title(':rainbow[Mahmoud amgad elseginy] \n')
 st.title(':rainbow[4211027]')
 
@@ -35,7 +40,7 @@ if is_empty_btn:
         st.balloons()
     else:
         st.success("The queue is not empty")
-        
+
     
 with open("data/queue.json", "w") as file:
     json.dump(queue, file)
